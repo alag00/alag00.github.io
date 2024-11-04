@@ -1,7 +1,219 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<head>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body style="background-color:rgb(35, 30, 30);">
+<div class="sidenav" style="background-color:rgb(20, 15, 15);">
+    <a href="#introduction">Introduction</a>
+    <a href="#about">About</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#contract">Contact</a>
+</div>
+<div class="main">
+    <script src="index.js"></script>
+
+    <!-- Full screen background with gifs of portfolio gameplay -->
+    <div id="introduction" style="height: 100vh;">
+        <img src="Background.gif" alt="Gameplay" class="gifBackground">
+        <h1 class="middleCenter textOutline" style="color:yellow; font-size: 60px; font-family:tahoma; outline: 5px ">Alexander Agfemalm</h1>
+    </div>
+
+
+    <div id="about">
+        <hr>
+        <h1 class="center" style="color:yellow;">About</h1>
+
+        <div class="aboutGrid">
+            <div class="middleText">
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                    reprehenderit
+                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="portfolio">
+        <hr>
+
+        <h1 class="center" style="color:yellow;">Portfolio</h1>
+
+        <button onclick="OpenLarge()" class="button" style="background-color:rgb(15, 10, 10);">Group Projects</button>
+        <button onclick="OpenSmall()" class="button" style="background-color:rgb(10, 15, 10);">Smaller Group Projects</button>
+        <button onclick="OpenSolo()" class="button" style="background-color:rgb(10, 10, 15);">Solo Projects</button>
+
+        <div id="largeProjects" style="background-color:rgb(20, 15, 15);">
+            <h2 class="portfolioTabName">Group Projects</h2>
+            <div class="projectContainer">
+                <div class="item item-1">
+                    <p>Chromatic Beats</p>
+                </div>
+                <div class="item item-2">
+                    <p>Role: Programmer</p>
+                    <p>Language: C#</p>
+                    <p>Production: 2021 | 8 Weeks</p>
+                    <p>Tools: Unity, Plastic SCM, Visual Studio, </p>
+                    <a href="#portfolio">Download</a>
+                </div>
+                <div class="item item-3">
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/jlhP4YoWxLs?si=XufPmYOCcF0eLrkA"></iframe>
+                </div>
+            </div>
+            <div class="projectContainer">
+                <div class="item item-1">
+                    <p>Kindred</p>
+                </div>
+                <div class="item item-2">
+                    <p>Role: Programmer</p>
+                    <p>Language: C#</p>
+                    <p>Production: 2021 | 8 Weeks</p>
+                    <p>Tools: Unity, Plastic SCM, Visual Studio, </p>
+                    <a href="#portfolio">Download</a>
+                </div>
+                <div class="item item-3">
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/Bx73wekfYsw?si=8T5TOwe0a-fRVFXj"></iframe>
+                </div>
+            </div>
+            <div class="projectContainer">
+                <div class="item item-1">
+                    <p>Teddy's Tale</p>
+                </div>
+                <div class="item item-2">
+                    <p>Role: Programmer</p>
+                    <p>Language: UE4 Blueprints</p>
+                    <p>Production: 2022 | 8 Weeks</p>
+                    <p>Tools: Unreal Engine 4, Plastic SCM, Jira </p>
+                    <a href="#portfolio">Download</a>
+                </div>
+                <div class="item item-3">
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/RClREVuILyk?si=JiuJ-c96TSIC5Wxw"></iframe>
+                </div>
+            </div>
+        </div>
+
+        <div id="smallProjects" style="display: none; background-color:rgb(15, 20, 15);">
+            <h2 class="portfolioTabName">Smaller Group Projects</h2>
+            <div class="projectContainer" style="background-color:rgb(20, 30, 20);">
+                <div class="item item-1">
+                    <p>Crab Panic</p>
+                </div>
+                <div class="item item-2" style="background-color:rgb(10, 15, 10);">
+                    <p>Role: Programmer</p>
+                    <p>Language: C#</p>
+                    <p>Production: 2023 | 3 Weeks</p>
+                    <p>Tools: Unity, Visual Studio, </p>
+                    <a href="#portfolio" download>Download</a>
+                </div>
+                <div class="item item-3">
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/Ad09pfZ6Trg?si=FLkTNMBJ_wJIZkIZ"></iframe>
+                </div>
+            </div>
+
+            <div class="projectContainer" style="background-color:rgb(20, 30, 20);">
+                <div class="item item-1">
+                    <p>Stay Grounded</p>
+                </div>
+                <div class="item item-2" style="background-color:rgb(10, 15, 10);">
+                    <p>Role: Programmer</p>
+                    <p>Language: C#</p>
+                    <p>Production: 2023 | 3 Weeks</p>
+                    <p>Tools: Unity, Visual Studio, </p>
+                    <a href="#portfolio">Download</a>
+                </div>
+                <div class="item item-3">
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/wzISq8jUppc?si=tpg5nzYi_t9z19fy"></iframe>
+                </div>
+            </div>
+
+            <div class="projectContainer" style="background-color:rgb(20, 30, 20);">
+                <div class="item item-1">
+                    <p>Ballin'</p>
+                </div>
+                <div class="item item-2" style="background-color:rgb(10, 15, 10);">
+                    <p>Role: Programmer</p>
+                    <p>Language: C#</p>
+                    <p>Production: 2023 | 3 Weeks</p>
+                    <p>Tools: Unity, Visual Studio, </p>
+                    <a href="#portfolio">Download</a>
+                </div>
+                <div class="item item-3">
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/u0mEJK1iKPY?si=Q87Nu2UDKuGq4Ll3"></iframe>
+                </div>
+            </div>
+
+            <div class="projectContainer" style="background-color:rgb(20, 30, 20);">
+                <div class="item item-1">
+                    <p>Cool Guys Don't Look At Explosions</p>
+                </div>
+                <div class="item item-2" style="background-color:rgb(10, 15, 10);">
+                    <p>Role: Programmer</p>
+                    <p>Language: C#</p>
+                    <p>Production: 2023 | 3 Weeks</p>
+                    <p>Tools: Unity, Visual Studio, </p>
+                    <a href="#portfolio">Download</a>
+                </div>
+                <div class="item item-3">
+                    <p class="center"  style="font-size: 20px; color: yellow;">No Video Available</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="soloProjects" style="display: none; background-color:rgb(15, 15, 20);">
+            <h2 class="portfolioTabName">Solo Projects</h2>
+            <div class="projectContainer" style="background-color:rgb(20, 20, 30);">
+                <div class="item item-1">
+                    <p>The Unholy Trek</p>
+                </div>
+                <div class="item item-2" style="background-color:rgb(10, 10, 15);">
+                    <p>Role: Programmer</p>
+                    <p>Language: C++</p>
+                    <p>Production: 2024 | 12 Weeks</p>
+                    <p>Tools: Raylib, Visual Studio, FL Studio, Aseprite, GitHub Desktop </p>
+                    <a href="https://alag00.itch.io/unholy-trek">Download</a>
+                </div>
+                <div class="item item-3">
+                    <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <div id="contract" style="height: 50vh;">
+        <hr>
+
+        <h1 class="center" style="color:yellow;">Contact</h1>
+        <h2 style="color:yellow; margin-top: 200px;">Phone: 46+6044 60 07</h2>
+        <a href="https://www.linkedin.com/in/alexander-agfemalm-a315b4240/"><img src="LinkedInLogo.png" alt="LinkedIn Icon" class="contactIcon"></a>
+        <a href="https://alag00.itch.io/"><img src="ItchIoLogo.png" alt="Itch.io Icon" class="contactIcon"></a>
+        <a href="https://github.com/alag00"><img src="GithubLogo.png" alt="Github Icon" class="contactIcon"></a>
+    </div>
+    <hr>
+
+</div>
 </body>
 </html>
