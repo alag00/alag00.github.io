@@ -25,30 +25,26 @@
         <h1 class="center" style="color:yellow;">About</h1>
 
         <div class="aboutGrid">
-            <div class="middleText">
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit
-                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                    non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+            <div class="middleText" style="background-color: rgb(20,15,15); padding-left: 20px; padding-right:20px; border-radius: 10px;">
+                <p>My name is Alexander Agfemalm. I am a game developer and programmer that aspires to work for a game company.</p>
 
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit
-                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                    non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <p>I have always been fascinated by the magic that is behind the creation of games.
+                    As long as I can remember, I have always been playing games.
+                    It started with GameBoy Advanced titles like Pokemon Sapphire or Kirby and the amazing mirror.
+                    My main source of games quickly shifted  towards Playstation 2 where I played games from all sorts of genres,
+                    Fightin, Sports, Platformers and hack n slash games.
+                    The most memorable game for me on the PS2 is the Crash Bandicoot game Twinsanity.
+                    My enjoyment of video games exploded when I jumped to PC games, with huge titles like Minecraft,
+                    Team Fortress 2 and League of Legends, games that still are played daily by many people.
+                    I believe the reason was because these games were multiplayer which offered a huge amount of replayability.</p>
 
-                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit
-                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
-                    non
-                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
+                <p>I spent 3 years studying Game Design at Uppsala University to learn how to structurally
+                    construct a video game from a gameplay designer and programmer view. During my education
+                    I was taught how to create games using Unity, Unreal Engine and even without an engine
+                    by using an API for rendering graphics like OpenGL.
+                    I created a few short games through group projects for some of the university courses.
+                    I spent my exam thesis on researching the audio aspect of the horror game Darkwood.
+                    Currently I am searching for a job in this field while improving my skills by developing games.</p>
             </div>
         </div>
     </div>
@@ -59,12 +55,13 @@
 
         <h1 class="center" style="color:yellow;">Portfolio</h1>
 
-        <button onclick="OpenLarge()" class="button" style="background-color:rgb(15, 10, 10);">Group Projects</button>
-        <button onclick="OpenSmall()" class="button" style="background-color:rgb(10, 15, 10);">Smaller Group Projects</button>
-        <button onclick="OpenSolo()" class="button" style="background-color:rgb(10, 10, 15);">Solo Projects</button>
+        <button onclick="OpenLarge()" id="groupLargeButton" class="button" style="background-color:rgb(30, 20, 20); color: yellow;">Group Projects</button>
+        <button onclick="OpenSmall()" id="groupSmallButton" class="button" style="background-color:rgb(10, 15, 10);">Smaller Group Projects</button>
+        <button onclick="OpenSolo()" id="groupSoloButton" class="button" style="background-color:rgb(10, 10, 15);">Solo Projects</button>
 
         <div id="largeProjects" style="background-color:rgb(20, 15, 15);">
-            <h2 class="portfolioTabName">Group Projects</h2>
+            <!--<h2 class="portfolioTabName">Group Projects</h2> <!-->
+            <div style="background-color:rgb(30, 20, 20); height: 20px;"></div>
             <div class="projectContainer">
                 <div class="item item-1">
                     <p>Chromatic Beats</p>
@@ -76,8 +73,8 @@
                     <p>Tools: Unity, Plastic SCM, Visual Studio, </p>
                     <a href="downloads/Chromatic_Beats.zip">Download (54,8 MB)</a>
                 </div>
-                <div class="item item-3">
-                    <iframe width="420" height="315" src="https://www.youtube.com/embed/jlhP4YoWxLs?si=XufPmYOCcF0eLrkA"></iframe>
+                <div class="item item-3" style="background-color:rgb(15, 10, 10);">
+                    <video width="420px" height="295px" class="previewVideo" controls muted src="videos/PreviewCB.mp4"></video>
                 </div>
             </div>
             <div class="projectContainer">
@@ -91,8 +88,8 @@
                     <p>Tools: Unity, Plastic SCM, Visual Studio, </p>
                     <a style="text-decoration: line-through;">Download (160 MB)</a>
                 </div>
-                <div class="item item-3">
-                    <iframe width="420" height="315" src="https://www.youtube.com/embed/Bx73wekfYsw?si=8T5TOwe0a-fRVFXj"></iframe>
+                <div class="item item-3" style="background-color:rgb(15, 10, 10);">
+                    <video width="420px" height="295px" class="previewVideo" controls muted src="videos/PreviewK.mp4"></video>
                 </div>
             </div>
             <div class="projectContainer">
@@ -106,14 +103,31 @@
                     <p>Tools: Unreal Engine 4, Plastic SCM, Jira </p>
                     <a href="https://sh3rvin.itch.io/teddys-tale">Download at Itch.io (1,1 GB)</a>
                 </div>
-                <div class="item item-3">
-                    <iframe width="420" height="315" src="https://www.youtube.com/embed/RClREVuILyk?si=JiuJ-c96TSIC5Wxw"></iframe>
+                <div class="item item-3" style="background-color:rgb(15, 10, 10);">
+                    <video width="420px" height="295px" class="previewVideo" controls muted src="videos/PreviewTT.mp4"></video>
                 </div>
             </div>
         </div>
 
         <div id="smallProjects" style="display: none; background-color:rgb(15, 20, 15);">
-            <h2 class="portfolioTabName">Smaller Group Projects</h2>
+            <!-- <h2 class="portfolioTabName">Smaller Group Projects</h2><!-->
+            <div style="background-color:rgb(20, 30, 20); height: 20px;"></div>
+            <div class="projectContainer" style="background-color:rgb(20, 30, 20);">
+                <div class="item item-1">
+                    <p>Between The Signals</p>
+                </div>
+                <div class="item item-2" style="background-color:rgb(10, 15, 10);">
+                    <p>Role: Scrum Master, Implement main mechanics, endings, menus.</p>
+                    <p>Language: C#</p>
+                    <p>Production: 2024 | 4 Weeks</p>
+                    <p>Tools: Github, Unity, Visual Studio, </p>
+                    <a href="https://zoibur.itch.io/betweenthesignals">Playable on Itch.io</a>
+                </div>
+                <div class="item item-3" style="background-color:rgb(10, 15, 10);">
+                    <video width="420px" height="295px" class="previewVideo" controls muted src="videos/PreviewBtS.mp4"></video>
+                </div>
+            </div>
+
             <div class="projectContainer" style="background-color:rgb(20, 30, 20);">
                 <div class="item item-1">
                     <p>Crab Panic</p>
@@ -125,8 +139,8 @@
                     <p>Tools: Unity, Visual Studio, </p>
                     <a href="downloads/Crab_Panic.zip" download>Download (22,4 MB)</a>
                 </div>
-                <div class="item item-3">
-                    <iframe width="420" height="315" src="https://www.youtube.com/embed/Ad09pfZ6Trg?si=FLkTNMBJ_wJIZkIZ"></iframe>
+                <div class="item item-3" style="background-color:rgb(10, 15, 10);">
+                    <video width="420px" height="295px" class="previewVideo" controls muted src="videos/PreviewCP.mp4"></video>
                 </div>
             </div>
 
@@ -141,8 +155,8 @@
                     <p>Tools: Unity, Visual Studio, </p>
                     <a href="downloads/Stay_Grounded.zip">Download (23,7 MB)</a>
                 </div>
-                <div class="item item-3">
-                    <iframe width="420" height="315" src="https://www.youtube.com/embed/wzISq8jUppc?si=tpg5nzYi_t9z19fy"></iframe>
+                <div class="item item-3" style="background-color:rgb(10, 15, 10);">
+                    <video width="420px" height="295px" class="previewVideo" controls muted src="videos/PreviewSG.mp4"></video>
                 </div>
             </div>
 
@@ -157,8 +171,8 @@
                     <p>Tools: Unity, Visual Studio, </p>
                     <a href="downloads/Ballin.zip">Download (21,9 MB)</a>
                 </div>
-                <div class="item item-3">
-                    <iframe width="420" height="315" src="https://www.youtube.com/embed/u0mEJK1iKPY?si=Q87Nu2UDKuGq4Ll3"></iframe>
+                <div class="item item-3" style="background-color:rgb(10, 15, 10);">
+                    <video width="420px" height="295px" class="previewVideo" controls muted src="videos/PreviewB.mp4"></video>
                 </div>
             </div>
 
@@ -173,15 +187,16 @@
                     <p>Tools: Unity, Visual Studio, </p>
                     <a href="downloads/Cool_Guys_Dont_Look_At_Explosions.zip">Download (45,7 MB)</a>
                 </div>
-                <div class="item item-3">
-                    <p class="center"  style="font-size: 20px; color: yellow;">No Video Available</p>
+                <div class="item item-3" style="background-color:rgb(10, 15, 10);">
+                    <video width="420px" height="295px" class="previewVideo" controls muted src="videos/PreviewCG.mp4"></video>
                 </div>
             </div>
 
         </div>
 
         <div id="soloProjects" style="display: none; background-color:rgb(15, 15, 20);">
-            <h2 class="portfolioTabName">Solo Projects</h2>
+            <!-- <h2 class="portfolioTabName">Solo Projects</h2><!-->
+            <div style="background-color:rgb(20, 20, 30); height: 20px;"></div>
             <div class="projectContainer" style="background-color:rgb(20, 20, 30);">
                 <div class="item item-1">
                     <p>The Unholy Trek</p>
@@ -193,8 +208,8 @@
                     <p>Tools: Raylib, Visual Studio, FL Studio, Aseprite, GitHub Desktop </p>
                     <a href="https://alag00.itch.io/unholy-trek">Download at Itch.io (2,9 MB)</a>
                 </div>
-                <div class="item item-3">
-                    <iframe width="420" height="315" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+                <div class="item item-3" style="background-color:rgb(10, 10, 15);">
+                    <video width="420px" height="295px" class="previewVideo" controls muted src="videos/PreviewUT.mp4"></video>
                 </div>
             </div>
         </div>
@@ -209,7 +224,7 @@
         <h1 class="center" style="color:yellow;">Contact</h1>
         <a href="downloads/Agfemalm_Alexander_CV.pdf" target="_blank"><h2 style="color:yellow; margin-top: 150px; font-style: italic; ">Open CV</h2></a>
 
-        <h2 style="color:yellow;">Phone: 46+6044 60 07</h2>
+        <h2 style="color:yellow;">Phone: +46 76 044 60 07</h2>
 
         <a href="https://www.linkedin.com/in/alexander-agfemalm-a315b4240/"><img src="LinkedInLogo.png" alt="LinkedIn Icon" class="contactIcon"></a>
         <a href="https://alag00.itch.io/"><img src="ItchIoLogo.png" alt="Itch.io Icon" class="contactIcon"></a>
