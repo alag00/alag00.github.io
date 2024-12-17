@@ -3,26 +3,34 @@
 <head>
     <link rel="stylesheet" href="index.css">
 </head>
-<body style="background-color:rgb(35, 30, 30);">
+<body onload="changeVideo()" style="background-color:rgb(35, 30, 30);">
 <div class="sidenav" style="background-color:rgb(20, 15, 15);">
     <a href="#introduction">Introduction</a>
     <a href="#about">About</a>
-    <a href="#portfolio">Portfolio</a>
+    <a href="#portfolio">Projects</a>
     <a href="#contract">Contact</a>
 </div>
 <div class="main">
     <script src="index.js"></script>
 
+
     <!-- Full screen background with gifs of portfolio gameplay -->
-    <div id="introduction" style="height: 100vh;">
-        <img src="Background.gif" alt="Gameplay" class="gifBackground">
-        <h1 class="middleCenter textOutline" style="color:yellow; font-size: 60px; font-family:tahoma; outline: 5px ">Alexander Agfemalm</h1>
+
+    <div  id="introduction" style="height: 100vh;">
+       <!-- <img src="Background.gif" alt="Gameplay" class="introBackground"> <!-->
+
+        <video class="introBackground" id="gameplayPreview" autoplay muted loop src="videos/PreviewCB.mp4#t=30"></video>
+        <div class="gradientOverlay"> </div>
+
+        <h1 class="middleCenter textOutline" style="color:rgb(230,230,70); font-size: 60px; font-family:tahoma; outline: 5px ">Alexander Agfemalm</h1>
+
+
     </div>
 
 
     <div id="about">
         <hr>
-        <h1 class="center" style="color:yellow;">About</h1>
+        <h1 class="center" style="color:rgb(230,230,70);">About</h1>
 
         <div class="aboutGrid">
             <div class="middleText" style="background-color: rgb(20,15,15); padding-left: 20px; padding-right:20px; border-radius: 10px;">
@@ -47,15 +55,17 @@
                     Currently I am searching for a job in this field while improving my skills by developing games.</p>
             </div>
         </div>
+
+        <div style="height: 40px;"></div>
     </div>
 
 
     <div id="portfolio">
         <hr>
 
-        <h1 class="center" style="color:yellow;">Portfolio</h1>
+        <h1 class="center" style="color:rgb(230,230,70);">Projects</h1>
 
-        <button onclick="OpenLarge()" id="groupLargeButton" class="button" style="background-color:rgb(30, 20, 20); color: yellow;">Group Projects</button>
+        <button onclick="OpenLarge()" id="groupLargeButton" class="button" style="background-color:rgb(30, 20, 20); color: rgb(180,180,40);">Group Projects</button>
         <button onclick="OpenSmall()" id="groupSmallButton" class="button" style="background-color:rgb(10, 15, 10);">Smaller Group Projects</button>
         <button onclick="OpenSolo()" id="groupSoloButton" class="button" style="background-color:rgb(10, 10, 15);">Solo Projects</button>
 
@@ -221,17 +231,17 @@
     <div id="contract" style="height: 50vh;">
         <hr>
 
-        <h1 class="center" style="color:yellow;">Contact</h1>
-        <a href="downloads/Agfemalm_Alexander_CV.pdf" target="_blank"><h2 style="color:yellow; margin-top: 150px; font-style: italic; ">Open CV</h2></a>
+        <h1 class="center" style="color:rgb(230,230,70);">Contact</h1>
+        <a href="downloads/Agfemalm_Alexander_CV.pdf" target="_blank"><h2 style="color:rgb(180,180,40); margin-top: 150px; font-style: italic; ">Open CV</h2></a>
 
-        <h2 style="color:yellow;">Phone: +46 76 044 60 07</h2>
+        <h2 style="color:rgb(180,180,40);">Phone: +46 76 044 60 07</h2>
 
-        <a href="https://www.linkedin.com/in/alexander-agfemalm-a315b4240/"><img src="LinkedInLogo.png" alt="LinkedIn Icon" class="contactIcon"></a>
+        <a href="https://www.linkedin.com/in/alexander-agfemalm/"><img src="LinkedInLogo.png" alt="LinkedIn Icon" class="contactIcon"></a>
         <a href="https://alag00.itch.io/"><img src="ItchIoLogo.png" alt="Itch.io Icon" class="contactIcon"></a>
         <a href="https://github.com/alag00"><img src="GithubLogo.png" alt="Github Icon" class="contactIcon"></a>
     </div>
-    <hr>
-
+    <!-- <hr><!-->
+    <!--<div style="height: 20px;"></div> <!-->
 </div>
 </body>
 </html>
